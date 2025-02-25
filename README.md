@@ -28,3 +28,4 @@ The website can be accessed over the host PC without wifi by either directly ope
 Use Python RTC module to save timestamp to data so if Arduino needs to be reset, lap times can be calculated manually.
 Get rid of the "time to beat" element of the graph. Instead, put a print statement in place for the lap time in sec each time tag is dibbed, and print array of fastest lap times per house.
 Adjust tick spacing on graph, and include grid lines as hard to read when 30+ laps have been recorded. OR work out how to put the bar chart value on the graph. OR put in a print statement for the lap count list.
+Spare tag for each house so that the graph keeps updating even if using spare tag.
