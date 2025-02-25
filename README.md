@@ -19,7 +19,7 @@ HTML Code:
 The code is set to refresh every 5 sec, uploading the current graph.
 The website can be shared over a local web server by running the following commands in the command line of the host PC:
 ipconfig - returns ip adress of host device
--m python http.server
+python -m http.server
 The webserver can then be accessed from other devices connected to the same wifi by typing the adress: "host ip":8000 into a search engine
 The website can be accessed over the host PC without wifi by either directly opening the html code as a website, or putting the adress: localhost:8000
 
