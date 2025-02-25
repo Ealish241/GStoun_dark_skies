@@ -24,3 +24,7 @@ The webserver can then be accessed from other devices connected to the same wifi
 The website can be accessed over the host PC without wifi by either directly opening the html code as a website, or putting the adress: localhost:8000
 
 
+**UPDATES TO BE MADE AFTER FIRST EVENT**
+Use Python RTC module to save timestamp to data so if Arduino needs to be reset, lap times can be calculated manually.
+Get rid of the "time to beat" element of the graph. Instead, put a print statement in place for the lap time in sec each time tag is dibbed, and print array of fastest lap times per house.
+Adjust tick spacing on graph, and include grid lines as hard to read when 30+ laps have been recorded. OR work out how to put the bar chart value on the graph. OR put in a print statement for the lap count list.
