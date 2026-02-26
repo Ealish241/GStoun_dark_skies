@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Preload the image so the browser fetches it immediately -->
+<link rel="preload" as="image"
+      href="https://1drv.ms/i/c/0a4af44229870bcc/IQSgvJF_S9LXTqwqXuCih4ApAUiy23Mj0vvDxvlB2cGXPXI?width=326&height=273">
+
+<meta http-equiv="refresh" content="1000">
+<style>
+h1 {
+    text-align: center;
+}
+.aligncenter {
+    text-align: center;
+}
+</style>
+
+<title>Gordonstoun Dark Skies</title>
+</head>
+
+<body>
+<h1 style="color: purple; font-family: 'Arial'; font-size: 48px;">
+    Gordonstoun Dark Skies 2026
+</h1>
+
+<p style="font-family: 'Arial'; font-size: 16px; text-align:center">
+    Live lap counts are shown below. (Make sure you refresh the page to see the most up to date graph)<br>
+    Make sure to keep an accurate running order for your house!<br>
+</p>
+
+
+<p id="refresh-time" class="timestamp"></p>
+
+<script type="text/javascript">
+    let myDate = new Date();
+    let hours = myDate.getHours();
+    
+    let minutes = myDate.getMinutes();
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+
+    let myTime = hours + " : " + minutes ;
+
+    document.getElementById("refresh-time").textContent = "Last Refresh at: " + myTime;
+</script>
+
+<style>
+    .timestamp {
+        font-family: Arial;
+        font-size: 14px;
+        color: grey;
+        text-align: center;
+    }
+</style>
+
+
+
+
+<p class="aligncenter">
+    <!-- Leave src empty so the browser doesn't load twice -->
+    <img id="graph"
+         alt="No Completed Laps Yet!"
+         height="500"
+         width="600">
+</p>
+
+<script>
+    const base = "https://1drv.ms/i/c/0a4af44229870bcc/IQSgvJF_S9LXTqwqXuCih4ApAUiy23Mj0vvDxvlB2cGXPXI?width=1072&height=873";
+    document.getElementById("graph").src = base + "&cb=" + Date.now();
+</script>
+
+</body>
+</html>
