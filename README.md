@@ -23,6 +23,8 @@ python -m http.server
 The webserver can then be accessed from other devices connected to the same wifi by typing the adress: "host ip":8000 into a search engine
 The website can be accessed over the host PC without wifi by either directly opening the html code as a website, or putting the adress: localhost:8000
 
+SINCE 2026: ResultsPage adapts the website code so that it can be shared/streamed via OneDrive rather than local host.
+
 
 **COMMENTS FOLLOWING 2025 EVENT:**
 
